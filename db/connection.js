@@ -1,5 +1,5 @@
-// const mysql = require('mysql2');
-var mysql=require('mysql');
+const mysql = require('mysql2');
+
 const util = require('util');
 // Connect to database
 const connection = mysql.createConnection(
