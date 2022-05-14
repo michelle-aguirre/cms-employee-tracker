@@ -1,29 +1,18 @@
 # cms-employee-tracker
-## Deploy
+## Demo Link
 
-[Deployed Link](https://michelle-aguirre.github.io/michelle_portfolio/)
+[Demo Video](https://youtu.be/EtAaccmJMzQ)
 
 ## Description
 
-In this project I created a portfolio using HTML and CSS. This portfolio showcases my bio, about me, my contact information, and my projects.
+In this project I created an employee tracker app with categories such as 'view all departments, roles, and employees' as well as the ability to add a department, role, employee or update an employee.
 
-## Image
-
-	![portfolio image](../images/image.jpg)
 
 ## Table of Contents
 
 ## Technology
 
-HTML and CSS
-
-## Installation
-
-## Usage
-
-## Credits and Contributors
-
-## Testing
+mySQL, json, inquirer package, console.table package
 
 ## Questions and Contacts
 

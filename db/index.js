@@ -64,7 +64,7 @@ class DB {
     return this.connection.promise().query("INSERT INTO role SET ?", role);
   }
   findAllDepartments() {
-    return this.connection.query("SELECT department.id, department.name FROM department");
+    return this.connection.promise().query("SELECT department.id, department.name FROM department");
   }
 
   //find all departments
@@ -78,8 +78,5 @@ class DB {
       .promise()
       .query("INSERT INTO department SET ?", department);
   }
-  // findAllEmployees() {
-  //     return this.connection.promise().query();
-  // }
 }
 module.exports = new DB(connection);

@@ -81,14 +81,14 @@ function viewDepartments() {
     .then(()=>mainPrompt()); 
 }
 function viewRoles() {
-    db. findAllRoles().then(([rows])=>{
+    db.findAllRoles().then(([rows])=>{
         let roles = rows;
         console.table(roles)
     }) 
     .then(()=>mainPrompt()); 
 }
 function viewEmployees() {
-    db. findAllEmployees().then(([rows])=>{
+    db.findAllEmployees().then(([rows])=>{
         let employees = rows;
         console.table(employees)
     }) 
@@ -103,7 +103,7 @@ function addDepartment() {
     ])
     .then (res=>{
         let name = res;
-    db. createDepartment(name)
+    db.createDepartment(name)
     .then(()=>console.log(`added ${name.name}to the database`))
         .then(()=>mainPrompt())
     }) 
@@ -124,7 +124,7 @@ function addEmployee() {
         let firstName = res.first_name;
         let lastName = res.last_name;
 
-    db. findAllRoles()
+    db.findAllRoles()
     .then(([rows]) => {
         let roles = rows;
         const roleChoices= roles.map(({ id, title})=>({
@@ -140,7 +140,7 @@ function addEmployee() {
         .then(res=> {
             let roleId = res.roleId; 
         // console.log(`added ${name.name}to the database`)
-    db. findAllEmployees()
+    db.findAllEmployees()
         .then(([rows])=>{
             let employees = rows;
             const managerChoices = employees.map(({ id, first_name, last_name})=>({
